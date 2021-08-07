@@ -78,7 +78,7 @@ document.addEventListener("keyup", function (even) {
             addToDo(toDo, id, false, false);
 
             LIST.push({
-                name: toDO,
+                name: toDo,
                 id: id,
                 done: false,
                 trash: false,
