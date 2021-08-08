@@ -78,17 +78,17 @@ document.addEventListener("keyup", function (even) {
             addToDo(toDo, id, false, false);
 
             LIST.push({
-                name: toDO,
+                name: toDo,
                 id: id,
                 done: false,
                 trash: false,
             });
-
+            input.value = " ";
             // Adding the element to the Local Storage ((ps: This code takes place where the List needs to be saved and updated))
             localStorage.setItem("TODO", JSON.stringify(LIST));
             id++; // Incrementing the value of elements added into the list 
         }
-        input.value = "";
+
     }
 });
 
@@ -123,4 +123,3 @@ list.addEventListener("click", function (event) {
     // add item to localstorage ( this code must be added where the LIST array is updated)
     localStorage.setItem("TODO", JSON.stringify(LIST));
 });
-
